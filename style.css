@@ -5,23 +5,23 @@ body {
 }
 /* *{
   outline: 1px dashed purple;
-}   */
+}    */
 
 header {
   display: block;
 }
 
-.header {
+.header { 
   z-index: 1; 
   text-align: center;
   color: #fff;
-  position: relative;
+  /* position: relative; */
   font-family: cursive;
   height: 100vh;
   width: 100%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  */
   margin: 0 auto;
   overflow: hidden;
   background: linear-gradient(90deg,
@@ -30,18 +30,19 @@ header {
       rgba(0, 212, 255, 1) 100%);
 }
 
-/*h2 {
-  font-family: poppins;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  font-weight: bold;
+.head{
+  z-index: 1;
+  text-align: center;
   color: #fff;
-  text-transform: uppercase;
-  margin: 0;
-}*/
+  position: absolute;
+  font-family: cursive;
+  width: 80%;
+  top: 50%;    
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .box div {
   position: absolute;
   width: 60px;
@@ -122,6 +123,7 @@ header {
   }
 }
 
+
 h1 {
   margin: .67em 0;
   font-size: 2.5rem;
@@ -160,10 +162,10 @@ h1 {
 
 .header-icons {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   justify-content: center;
   text-align: center;
-  top: 365px;
+  /* top: 365px;  */
 }
 
 .down,
@@ -174,7 +176,7 @@ h1 {
 
 .header-icons .icon {
   height: 40px;
-  padding-top: 10px; 
+  padding-top: 10px;  
   border-radius: 50%;
   border: 2px solid #fff;
   transition: all .7s;
@@ -189,11 +191,11 @@ h1 {
   background: #fff;
 }
 
-@media only screen and (min-width:550px) {
+/* @media only screen and (min-width:550px) {
   .header-icons {
-    top: 425px;
+    top: 425px; 
   }
-}
+} */
 
 @media only screen and (min-width:550px) {
   .header-icons .icon {
@@ -219,7 +221,7 @@ h1 {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   top: 50%;
-  left: 50%;
+  left: 50%; 
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100px;
@@ -239,8 +241,8 @@ h1 {
 .header-links {
   margin: 10px;
   display: block;
-  position: absolute;
-  top: 410px;
+  /* position: absolute; */
+  /* top: 410px;  */
 
 }
 
@@ -254,20 +256,20 @@ h1 {
 @media only screen and (min-width:550px) {
   .header-links .link {
     font-size: 20px;
-    margin-top: 90px;
-    margin-top: 90px;
+    /* margin-top: 90px;
+    margin-top: 90px; */
   }
 }
 
-@media only screen and (min-width:550px) {
+/* @media only screen and (min-width:550px) {
   .header-links {
-    top: 490px;
+    top: 490px; 
   }
-}
+} */
 
 #about {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto; 
   max-width: 960px;
   font-family: cursive;
 
@@ -281,7 +283,8 @@ h1 {
 }
 
 p {
-  margin: 1em 0;
+  margin-top: 50px !important;
+  /* margin: 1em 0;  */
   color: #4b5664;
   font-family: cursive;
 }
@@ -349,27 +352,38 @@ h4 {
   margin: 0 auto;
   font-family: cursive;
   /* color: #fff;  */
-  text-align: center;
+  text-align: center; 
   /* background-color: #5e5d5d29; */
   background: linear-gradient(to right,#84fab0 0%,#8fd3f4 51%,#84fab0 100%);
 }
+@media only screen and (min-width:616px) {
+  #education {
+    height: 75vh;
+  }
+} 
 
 .qual {
-  text-align: center;
+  /* text-align: center; */
   font-size: 60px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: wrap; 
+  /* flex-flow: row wrap;
+  flex-flow: column wrap;  */
+  justify-content: space-around;
 }
-
+@media only screen and (min-width:917px) {
+  .qual {
+    margin-top: 100px;
+  }
+}
 .edu,
 .wrapper {
   height: 150px;
   width: 300px;
-  margin: 12px auto;
+  margin: 15px auto;
   position: relative;
-
+ 
 }
 
 .edu {
@@ -377,9 +391,10 @@ h4 {
 }
 
 .wrapper {
-  text-align: center;
+  text-align: center; 
   transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
   transform-style: preserve-3d;
+  box-sizing: border-box;
 }
 
 .edu:hover .wrapper {
@@ -389,8 +404,8 @@ h4 {
 .wrapper {
   /* width: 300px;
   height: 200px;  */
-  margin: 20px auto;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  /* margin: 75px auto;  */
+  /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
   /*backdrop-filter: blur(10px); */
   /* -webkit-backdrop-filter: blur(10px); */
   border-radius: 20px;
@@ -428,33 +443,62 @@ h4 {
 }
 
 .content {
-  padding-top: 5%;
+  padding-top: 0%;
+  position: relative;
+  top: -40px;
+  text-align: center; 
 }
 
 .content p {
   color: #fff;
   margin-top: 0;
+
+  
 }
 
 strong {
   font-size: 30px;
   color: navy;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+@media only screen and (min-width:550px) {
+  strong {
+    top: 89%;
+  }
+}  
 
 @media only screen and (min-width:550px) {
   .wrapper {
-    margin: 80px auto;
-    height: 200px;
-    width: 300px;
-
+    margin: 0px auto; 
+    height: 180px; 
+    
+    /* width: 300px; */
   }
 }
 
+@media only screen and (min-width:918px) {
+  strong {
+    top: 90%;
+  }
+}  
+
+@media only screen and (min-width:918px) {
+  .wrapper {
+    margin: 0px auto; 
+    height: 200px; 
+    
+    /* width: 300px; */
+  }
+}
 @media only screen and (min-width:550px) {
   .logo {
     font-size: 120px;
   }
 }
+
 
 @media only screen and (min-width:550px) {
   #education h1 {
@@ -468,14 +512,17 @@ strong {
   text-align: center;
   background-color: #1488CC;
   border-radius: 20px;
-  /* margin-top: 40px;  */
+  margin-top: -50px; 
   margin-left: 90px;
 }
+/* .small p{
+  bottom: 100px;
+} */
 
 @media only screen and (min-width:550px) {
   .back {
     background-color: black;
-    height: 200px;
+    height: 200px; 
   }
 }
 
@@ -522,7 +569,7 @@ strong {
 
 .btn{
   height: 40px;
-  width: 334px;
+  /* width: 334px; */
   background-color: navy !important;
   color: #fff !important;
 }
@@ -563,12 +610,12 @@ strong {
   color: #fff !important;
 } 
 
-@media only screen and (min-width:550px) {
+/* @media only screen and (min-width:550px) {
   .btn {
     width: 484px;
     
   }
-} 
+}  */
 #menu{
  z-index: 3;
  width: 100%;
@@ -606,7 +653,5 @@ strong {
   /* text-decoration: none; */
   /* margin: 0; */
   color: #fff;
-
+  
 }
-
-
